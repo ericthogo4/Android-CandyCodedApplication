@@ -37,7 +37,7 @@ public class DetailActivity extends AppCompatActivity {
             cursor.moveToPosition(position);
 
             String candyName = cursor.getString(cursor.getColumnIndexOrThrow(
-                    CandyContract.CandyEntry.COLUMN_NAME_NAME));
+                    CandyEntry.COLUMN_NAME_NAME));
             String candyPrice = cursor.getString(cursor.getColumnIndexOrThrow(
                     CandyEntry.COLUMN_NAME_PRICE));
             mCandyImageUrl = cursor.getString(cursor.getColumnIndexOrThrow(
